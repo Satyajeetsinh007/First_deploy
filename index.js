@@ -10,4 +10,9 @@ app.get('/demo', (req, res) => {
     res.set("content-type", "text/html");
     res.send('<h1>Demo app</h1>')
 })
+
+app.get('/credentials', (req, res) => {
+    res.json({ name: 'abc', password: 'em password na made' })
+})
+
 app.listen(process.env.PORT);
